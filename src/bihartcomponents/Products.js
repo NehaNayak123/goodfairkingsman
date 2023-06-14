@@ -45,7 +45,11 @@ export const Products = () => {
     const handleBags=()=>{setSarees(false);setScarves(false);setDupattas(false);setKurti(false);setMensKurta(false);setCropTop(false);setBelt(false);setCushion(false);setThrows(false);setPaintings(false);setBags(true);setPocketSquare(false);setDolls(false)}
     const handlePocketSquare=()=>{setSarees(false);setScarves(false);setDupattas(false);setKurti(false);setMensKurta(false);setCropTop(false);setBelt(false);setCushion(false);setThrows(false);setPaintings(false);setBags(false);setPocketSquare(true);setDolls(false)}
     const handleDolls=()=>{setSarees(false);setScarves(false);setDupattas(false);setKurti(false);setMensKurta(false);setCropTop(false);setBelt(false);setCushion(false);setThrows(false);setPaintings(false);setBags(false);setPocketSquare(false);setDolls(true)}
-  return (
+  
+    const [showImg, setShowImg]=useState(false)
+    const handleShow=()=>{setShowImg(true)}
+    const handleNonShow=()=>{setShowImg(false)}
+    return (
     <div className='product-container'>
         <div className='product-c-header'>
             {sarees ? "Sarees" : scarves ? "Scarves" : dupattas ? "Dupattas" : kurti ? "Kurti" :
@@ -141,10 +145,15 @@ export const Products = () => {
                 {/* <singleP/> */}
                 <div className='product-right-con'>
                     <div className='product-right-img-c'>
-                        <img className='product-right-img' src={saree1} alt='#'/>
+                        <img onMouseOut={handleNonShow} onMouseEnter={handleShow} className='product-right-img' src={showImg ? saree1_1 :saree1} alt='#'/>
+                        { showImg &&
+                            <div className='quick-view-c'>
+                                <p className='quick-view-c-p'>Quick View</p>
+                            </div>
+                        }
                     </div>
                     <div>
-                        <p className='product-right-img-p'>"Mulberry silk extra weft sari"</p>
+                        <p className='product-right-img-p'>Mulberry silk extra weft sari</p>
                         <p className='product-right-img-p'>₹18000</p>
                     </div>
                 </div>
