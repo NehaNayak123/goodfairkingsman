@@ -116,9 +116,9 @@ small{
     background-color: #fff;
     /* background-color: red; */
 }
-.product-right-img-c{
+/* .product-right-img-c{
 
-}
+} */
 .product-right-img,.product-right-img-hover{
     width: 100%;
 }
@@ -128,9 +128,9 @@ small{
 .product-right-img:hover, .product-right-img-hover{
     display: block;
 }
-.product-right-img-p{
+/* .product-right-img-p{
 
-}
+} */
 .quick-view-c{
     background-color: rgb(255, 255, 255, .4);
     text-align: center;
