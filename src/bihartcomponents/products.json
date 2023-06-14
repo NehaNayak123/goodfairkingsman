@@ -1,0 +1,23 @@
+{
+    "products":[
+        {
+            "sarees":[
+                {
+                    "src":["./saree1.webp","./saree1.1.webp"],
+                    "name":"Mulberry silk extra weft sari",
+                    "price":"18,000.00"
+                }
+            ]
+        },
+        {
+            "scarves":[
+
+            ]
+        },
+        {
+            "Dupattas":[
+
+            ]
+        }
+    ]
+}

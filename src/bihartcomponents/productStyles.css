@@ -1,0 +1,126 @@
+.product-container{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.product-c-header{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+/* ///    product-c    ///// */
+.product-c{
+    display: flex;
+}
+.product-c-left{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.left-filterBy{
+    display: flex;
+    flex-direction: column;
+}
+.left-filterBy-h2, .left-products-h2{
+    font-weight: 500;
+}
+.Fabric-c, .price-c, .color-c{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+}
+.Fabric-c-upper, .price-c-upper, .color-c-upper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: .1px 0;
+}
+.Fabric-c-upper-p,
+.price-c-upper-p,
+.color-c-upper-p{
+    font-size: 20px;
+    font-weight: 400;
+}
+.price-c-upper-p{
+    text-align: center;
+}
+/* //// */
+
+
+
+/* ///// price range slider css */
+.price-value{
+    color: blue;
+}
+small{
+    color: gray;
+    margin-top: 5rem;
+}
+/* .priceRange{
+    color: gray;
+    margin-top: 5rem;
+} */
+.slider{
+    width: 90%;
+    height: 3px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: blueviolet;
+}
+.slider .thumb{
+    width: 23px;
+    height: 23px;
+    cursor: grab;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid black;
+    top: -12px;
+}
+.track-1{
+    background-color: chartreuse;
+}
+/* ///// price range slider css  end  */
+.left-products-h2{
+    font-weight: 500;
+    margin-top: 2rem;
+}
+.left-products-c{
+    padding-left: 3rem;
+}
+.left-products-c-link{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+}
+.left-products-c-link:hover{
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+/* ///////////////////////////                product-c-right           //////////////////// */
+.product-c-right{
+    /* background-color: red; */
+    width: 82%;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: .5rem; */
+    padding: 0 auto;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+.product-right-con{
+    width: 31%;
+    /* height: 45%; */
+    margin: 0 0.5rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+}
+.product-right-img-c{
+
+}
+.product-right-img{
+    width: 100%;
+}
+.product-right-img-p{
+
+}

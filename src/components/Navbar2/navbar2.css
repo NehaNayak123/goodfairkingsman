@@ -1,0 +1,96 @@
+.navbar2-c{
+    width: 100%;
+    height: 100px;
+    /* background-color: #fff; */
+    background-color: #F4C300;
+    /* background-color: rgb(47, 43, 43); */
+    display: flex;
+    justify-content: space-between;
+    /* position: fixed; */
+}
+.navbar2-left{
+    padding-left: 2rem;
+    padding-top: .8rem;
+}
+.nav2-logo{
+    width: 100px;
+}
+/* /////////////////////////////////////////////// */
+.navbar2-middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.btn-divs{
+    margin: 0 1rem;
+    /* border: 2px solid rgb(24, 84, 235); */
+    /* border: 2px solid #F4C300; */
+    border: 2px solid #000000;
+    /* border: .1px solid #fff1b8; */
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    /* color: #585757; */
+    /* color: red; */
+}
+.btn-divs, .nav2-btn{
+    color: #000000;
+    /* color: red; */
+}
+.nav2-icon{
+    font-size: 20px;
+    margin-bottom: -3px;
+    /* color: rgb(24, 84, 235); */
+}
+.nav2-btn{
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    /* color: #585757; */
+}
+.btn-divs:hover{
+    /* border: 2px solid rgb(203, 217, 251); */
+    /* border: 2px solid #000000; */
+    /* background-color: rgb(203, 217, 251); */
+    /* background-color: #000000; */
+    /* color: #F4C300; */
+    cursor: pointer;
+}
+.nav2-btn:hover{
+    cursor: pointer;
+}
+/* ///////////////////////////////////////// */
+.navbar2-right{
+    display: flex;
+    padding-right: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+.nav2-right-div{
+    margin: 0 1rem;
+}
+.gray-div{
+    background-color: #f6f5f5;
+    /* background-color: #000000; */
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.gray-div:hover{
+    background-color: #cac6c6;
+}
+.gray-icon{
+    color: #585757;
+}
+.nav2-span{
+    color: #585757;
+    font-size: 14;
+}
+.nav2-login{
+    /* border: 1px solid rgb(24, 84, 235); */
+    border: 1px solid #000000;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.nav2-login-span{
+    font-size: 18px;
+    font-weight: 500;
+}
