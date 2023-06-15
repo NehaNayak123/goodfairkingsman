@@ -7,7 +7,9 @@ import { Products } from './bihartcomponents/Products';
 function App() {
   return (
     <div>
+      {/* goodfare all in one*/}
       {/* <Navbar/> */}
+      {/* goodfare separate navbar and hero section */}
       {/* <Navbar2/> */}
       {/* <Hero/> */}
       {/* /////////// bihart  ////////// */}
