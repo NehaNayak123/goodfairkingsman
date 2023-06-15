@@ -57,7 +57,6 @@ export const Products = () => {
     const handleShow=()=>{setShowImg(true)}
     const handleNonShow=()=>{setShowImg(false)}
 
-    // const [id, setId]=useState()
     const id1="1";
     const id2="2";
     const id3="3";
