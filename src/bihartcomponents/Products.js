@@ -54,13 +54,17 @@ export const Products = () => {
     const handleDolls=()=>{setSarees(false);setScarves(false);setDupattas(false);setKurti(false);setMensKurta(false);setCropTop(false);setBelt(false);setCushion(false);setThrows(false);setPaintings(false);setBags(false);setPocketSquare(false);setDolls(true)}
   
     const [showImg, setShowImg]=useState(false)
-    const handleShow=()=>{setShowImg(true)}
-    const handleNonShow=()=>{setShowImg(false)}
+    const [test, setTest]=useState()
+    const handleShow=(e)=>{
+        // const id=e.target.id
+            setTest(e.target.id)
+            setShowImg(true)  
+    }
+    const handleNonShow=()=>{
+        setTest()
+        setShowImg(false)
+    }
 
-    const id1="1";
-    const id2="2";
-    const id3="3";
-    const id4="4";
     return (
     <div className='product-container'>
         <div className='product-c-header'>
@@ -156,16 +160,54 @@ export const Products = () => {
             <div className='product-c-right flip-box'>
                 {/* <singleP/> */}
                 <div className='product-right-con'>
-                    <div className='product-right-img-c'>
+                    {/* <div className='product-right-img-c'>
                         <img 
-                            id={id1}
-                            style={{width:"100%", height:"20rem"}} 
+                            id='1'
+                            style={{width:"100%", height:"23rem"}} 
                             onMouseLeave={handleNonShow} 
                             onMouseEnter={handleShow} 
                             className='product-right-img' 
-                            src={showImg ? saree1_1 :saree1} alt='#'
+                            // src={showImg ? (test==='1' && saree1_1) : saree1} alt='#'
+                            src={(test==='1' && showImg) ?  saree1_1 : saree1} alt='#'
                         />
-                        { showImg &&
+                        { test==='1' && showImg &&
+                            <div className='quick-view-c'>
+                                <p className='quick-view-c-p'>Quick View</p>
+                            </div>
+                        }
+                    </div> */}
+                    <div  className='product-right-img-c' >
+                        <img 
+                            id='1'
+                            style={{width:"100%", height:"23rem"}} 
+                            onMouseLeave={handleNonShow} 
+                            onMouseEnter={handleShow}
+                            className='product-right-img' 
+                            src={(test==='1' && showImg) ?  saree1_1 : saree1} alt='#'
+                        />
+                        { test==='1' && showImg &&
+                            <div className='quick-view-c' 
+                                // onMouseLeave={handleNonShow} 
+                                onMouseEnter={handleShow}>
+                                <p className='quick-view-c-p'>Quick View</p>
+                            </div>
+                        }
+                    </div>
+                    <div>
+                        <p className='product-right-img-p'>Mulberry silk extra weft sari</p>
+                        <p className='product-right-img-p'>₹18000</p>
+                    </div>
+                </div>
+                <div className='product-right-con'>
+                    <div className='product-right-img-c'>
+                        <img id='2' 
+                            style={{width:"100%", height:"23rem"}} 
+                            onMouseOut={handleNonShow} 
+                            onMouseEnter={handleShow} 
+                            className='product-right-img' 
+                            // src={showImg ? (test==='2' && saree2_1) :saree2} alt='#'/>
+                            src={(test==='2' && showImg) ? saree2_1 :saree2} alt='#'/>
+                        { test==='2' && showImg &&
                             <div className='quick-view-c'>
                                 <p className='quick-view-c-p'>Quick View</p>
                             </div>
@@ -178,8 +220,13 @@ export const Products = () => {
                 </div>
                 <div className='product-right-con'>
                     <div className='product-right-img-c'>
-                        <img style={{width:"100%", height:"20rem"}} onMouseOut={handleNonShow} onMouseEnter={handleShow} className='product-right-img' src={showImg ? saree2_1 :saree2} alt='#'/>
-                        { id2==='2' && showImg &&
+                        <img id='3' 
+                            style={{width:"100%", height:"23rem"}} 
+                            onMouseOut={handleNonShow} 
+                            onMouseEnter={handleShow} 
+                            className='product-right-img' 
+                            src={(test==='3' && showImg) ?  saree3_1 :saree3} alt='#'/>
+                        { test==='3' && showImg &&
                             <div className='quick-view-c'>
                                 <p className='quick-view-c-p'>Quick View</p>
                             </div>
@@ -191,23 +238,14 @@ export const Products = () => {
                     </div>
                 </div>
                 <div className='product-right-con'>
-                    <div className='product-right-img-c'>
-                        <img style={{width:"100%", height:"20rem"}} onMouseOut={handleNonShow} onMouseEnter={handleShow} className='product-right-img' src={showImg ? saree3_1 :saree3} alt='#'/>
-                        { id3==='3' && showImg &&
-                            <div className='quick-view-c'>
-                                <p className='quick-view-c-p'>Quick View</p>
-                            </div>
-                        }
-                    </div>
-                    <div>
-                        <p className='product-right-img-p'>Mulberry silk extra weft sari</p>
-                        <p className='product-right-img-p'>₹18000</p>
-                    </div>
-                </div>
-                <div className='product-right-con'>
-                    <div className='product-right-img-c'>
-                        <img style={{width:"100%", height:"20rem"}} onMouseOut={handleNonShow} onMouseEnter={handleShow} className='product-right-img' src={showImg ? saree4_1 :saree4} alt='#'/>
-                        { id4==='4' && showImg &&
+                    <div className='product-right-img-c' style={{overflow:"hidden"}}>
+                        <img id='4' 
+                            style={{width:"100%", height:"23rem"}} 
+                            onMouseOut={handleNonShow} 
+                            onMouseEnter={handleShow} 
+                            className='product-right-img' 
+                            src={(test==='4' && showImg) ? saree4_1 :saree4} alt='#'/>
+                        { test==='4' && showImg &&
                             <div className='quick-view-c'>
                                 <p className='quick-view-c-p'>Quick View</p>
                             </div>
